@@ -19,7 +19,7 @@ export interface ResourceContent {
 export interface ResourceSection {
   heading: string;
   type: "table" | "grid" | "list" | "chart" | "flashcards";
-  data: string[][] | string[] | Record<string, string[]>;
+  data: string[][] | string[] | Record<string, string[] | string[][]>;
 }
 
 export const DOWNLOADABLE_RESOURCES: DownloadableResource[] = [
