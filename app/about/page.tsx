@@ -15,10 +15,10 @@ const team = [
 ];
 
 const values = [
-  { icon: "🆓", title: "Free Forever", desc: "Education should have no financial barriers. Every game, every resource — always free." },
-  { icon: "🔬", title: "Research-Backed", desc: "Every game is grounded in cognitive science and effective pedagogy, not guesswork." },
-  { icon: "🛡️", title: "Child Safe", desc: "No personal data collection. COPPA compliant." },
-  { icon: "🌍", title: "Inclusive Design", desc: "Built for all learners — including those with different learning styles and abilities." },
+  { icon: "🆓", title: "Free Forever", desc: "Education should have fewer financial barriers. Every game and resource on the site is free to access." },
+  { icon: "🔬", title: "Built with Learning in Mind", desc: "Our games are designed using age-appropriate learning principles and practical teaching methods." },
+  { icon: "🛡️", title: "Child Safe", desc: "We do not require children to create accounts or submit personal information to play. We design the site with child safety and privacy in mind." },
+  { icon: "🌍", title: "Inclusive Design", desc: "Built for different learning styles, abilities, and comfort levels so more children can enjoy learning math." },
 ];
 
 export default function AboutPage() {
