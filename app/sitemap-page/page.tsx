@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const BASE_URL = "https://math-games-for-kids-fawn.vercel.app";
+const BASE_URL = "https://www.mathgamesforkids.xyz";
 
 interface SitemapSection {
   heading: string;
