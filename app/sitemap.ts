@@ -3,7 +3,7 @@ import { GAMES, LEVELS, SKILLS } from "@/lib/games-data";
 import { BLOG_ARTICLES } from "@/lib/blog-data";
 import { DOWNLOADABLE_RESOURCES } from "@/lib/resources-data";
 
-const BASE_URL = "https://math-games-for-kids-fawn.vercel.app";
+const BASE_URL = "/";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
