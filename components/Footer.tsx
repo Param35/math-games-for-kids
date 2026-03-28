@@ -43,7 +43,7 @@ export default function Footer() {
               </span>
             </Link>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.875rem", lineHeight: 1.7, maxWidth: 220 }}>
-              Free, fun, and educational math games for kids aged 4–12. Making math magical, one game at a time.
+              Free and educational math games for children aged 4 to 12. Designed to make practice more engaging and approachable.
             </p>
             <div style={{ display: "flex", gap: "0.5rem", marginTop: "1rem" }}>
               {["📧", "🐦", "📘"].map((icon, i) => (
