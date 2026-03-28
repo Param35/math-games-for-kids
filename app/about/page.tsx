@@ -17,7 +17,7 @@ const team = [
 const values = [
   { icon: "🆓", title: "Free Forever", desc: "Education should have no financial barriers. Every game, every resource — always free." },
   { icon: "🔬", title: "Research-Backed", desc: "Every game is grounded in cognitive science and effective pedagogy, not guesswork." },
-  { icon: "🛡️", title: "Child Safe", desc: "No ads targeting children. No personal data collection. COPPA compliant." },
+  { icon: "🛡️", title: "Child Safe", desc: "No personal data collection. COPPA compliant." },
   { icon: "🌍", title: "Inclusive Design", desc: "Built for all learners — including those with different learning styles and abilities." },
 ];
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
             <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>🎯</div>
             <h2 id="mission-heading" style={{ fontFamily: "Outfit, sans-serif", fontWeight: 800, fontSize: "1.6rem", marginBottom: "1rem" }}>Our Mission</h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "1.05rem", lineHeight: 1.8 }}>
-              We believe that <strong style={{ color: "white" }}>every child deserves to love mathematics.</strong> Not fear it, not dread it — love it. We create beautifully designed, research-backed math games that make learning feel like pure play. No subscriptions. No ads targeting children. No barriers.
+              We believe that <strong style={{ color: "white" }}>every child deserves to love mathematics.</strong> Not fear it, not dread it — love it. We create beautifully designed, research-backed math games that make learning feel like pure play. No subscriptions. No barriers.
             </p>
           </div>
         </div>
