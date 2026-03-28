@@ -7,7 +7,7 @@ import { GAMES, LEVELS, SKILLS, getFeaturedGames } from "@/lib/games-data";
 export const metadata: Metadata = {
   title: "Free Math Games for Kids | Fun Online Math Practice",
   description:
-    "Discover 24 free interactive math games for kids aged 4–12! From counting and addition to fractions and geometry — make math fun and engaging today.",
+    "Discover 24 free interactive math games for kids, educators, and families! From counting and addition to fractions and geometry — make math fun and engaging today.",
 };
 
 const stats = [
