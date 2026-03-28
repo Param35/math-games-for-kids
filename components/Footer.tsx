@@ -23,6 +23,7 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Use" },
+    { href: "/sitemap-page", label: "Sitemap" },
   ],
 };
 
@@ -93,6 +94,7 @@ export default function Footer() {
             <Link href="/privacy" style={{ color: "var(--text-muted)", fontSize: "0.8rem", textDecoration: "none" }}>Privacy</Link>
             <Link href="/terms" style={{ color: "var(--text-muted)", fontSize: "0.8rem", textDecoration: "none" }}>Terms</Link>
             <Link href="/contact" style={{ color: "var(--text-muted)", fontSize: "0.8rem", textDecoration: "none" }}>Contact</Link>
+            <Link href="/sitemap-page" style={{ color: "var(--text-muted)", fontSize: "0.8rem", textDecoration: "none" }}>Sitemap</Link>
           </div>
         </div>
       </div>
