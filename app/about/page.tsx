@@ -44,7 +44,7 @@ export default function AboutPage() {
             <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>🎯</div>
             <h2 id="mission-heading" style={{ fontFamily: "Outfit, sans-serif", fontWeight: 800, fontSize: "1.6rem", marginBottom: "1rem" }}>Our Mission</h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "1.05rem", lineHeight: 1.8 }}>
-              We believe style={{ color: "white" }}>every child deserves to feel more confident with math.</strong> We create thoughtfully designed math games that make learning feel playful, clear, and rewarding. No subscriptions. Easy to access. Built with child safety in mind.
+              We believe <strong style={{ color: "white" }}>every child deserves to feel more confident with math.</strong> We create thoughtfully designed math games that make learning feel playful, clear, and rewarding. No subscriptions. Easy to access. Built with child safety in mind.
              </p>
           </div>
         </div>
