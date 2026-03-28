@@ -32,7 +32,7 @@ export default function AboutPage() {
           </h1>
           <div className="divider" />
           <p style={{ color: "var(--text-secondary)", maxWidth: 560, margin: "1.25rem auto 0", fontSize: "1rem", lineHeight: 1.7 }}>
-            We're a team of educators, designers, and parents on a mission to make math joyful, accessible, and completely free for every child.
+            We're a team of educators, designers, and parents on a mission to make math more joyful, accessible, and free to use for children and families.
           </p>
         </div>
       </section>
@@ -44,8 +44,8 @@ export default function AboutPage() {
             <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>🎯</div>
             <h2 id="mission-heading" style={{ fontFamily: "Outfit, sans-serif", fontWeight: 800, fontSize: "1.6rem", marginBottom: "1rem" }}>Our Mission</h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "1.05rem", lineHeight: 1.8 }}>
-              We believe that <strong style={{ color: "white" }}>every child deserves to love mathematics.</strong> Not fear it, not dread it — love it. We create beautifully designed, research-backed math games that make learning feel like pure play. No subscriptions. No barriers.
-            </p>
+              We believe style={{ color: "white" }}>every child deserves to feel more confident with math.</strong> We create thoughtfully designed math games that make learning feel playful, clear, and rewarding. No subscriptions. Easy to access. Built with child safety in mind.
+             </p>
           </div>
         </div>
       </section>
