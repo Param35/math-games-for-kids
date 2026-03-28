@@ -36,11 +36,11 @@ export default function PrivacyPage() {
               },
               {
                 title: "3. Cookies",
-                content: "We use only essential cookies necessary for the website to function. We do not use advertising cookies, tracking cookies, or third-party analytics cookies that could identify individual users or children.",
+                content: "We use only essential cookies necessary for the website to function.",
               },
               {
                 title: "4. Third-Party Services",
-                content: "We do not display third-party advertisements on our platform, particularly any ads targeting minors. We do not sell, rent, or share any user data with third parties for commercial purposes.",
+                content: "We only display Google Adx and AdSenae advertisements on our platform. We do not sell, rent, or share any user data with third parties for commercial purposes.",
               },
               {
                 title: "5. Children's Privacy (COPPA)",
