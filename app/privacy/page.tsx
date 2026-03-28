@@ -40,7 +40,7 @@ export default function PrivacyPage() {
               },
               {
                 title: "4. Third-Party Services",
-                content: "We only display Google Adx and AdSenae advertisements on our platform. We do not sell, rent, or share any user data with third parties for commercial purposes.",
+                content: "We only display Google Adx and AdSense advertisements on our platform. We do not sell, rent, or share any user data with third parties for commercial purposes.",
               },
               {
                 title: "5. Children's Privacy (COPPA)",
