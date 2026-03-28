@@ -36,11 +36,11 @@ export default function PrivacyPage() {
               },
               {
                 title: "3. Cookies",
-                content: "We use only essential cookies necessary for the website to function.",
+                content: "We use essential cookies necessary for the website to function. We may also use limited technologies related to privacy-preserving analytics and Google ad delivery. Because this website is directed to children, we configure advertising in a child-directed manner and do not use interest-based advertising for child-directed content.",
               },
               {
                 title: "4. Third-Party Services",
-                content: "We only display Google Adx and AdSense advertisements on our platform. We do not sell, rent, or share any user data with third parties for commercial purposes.",
+                content: "We display Google Ad Manager, AdX, or AdSense advertisements on our platform in a child-directed or non-personalized manner where required. We do not use interest-based advertising for child-directed content. We do not sell, rent, or share any user data with third parties for commercial purposes.",
               },
               {
                 title: "5. Children's Privacy (COPPA)",
