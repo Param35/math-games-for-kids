@@ -14,7 +14,7 @@ const contactInfo = [
 ];
 
 const faqs = [
-  { q: "Are all games really free?", a: "Yes! Every game on MathGames for Kids is 100% free, forever. No sign-up, no subscription, no ads." },
+  { q: "Are all games really free?", a: "Yes! Every game on MathGames for Kids is 100% free, forever. No sign-up, no subscription." },
   { q: "What age range are the games for?", a: "Our games are designed for children aged 4–12, spanning Kindergarten through upper elementary (Grade 6)." },
   { q: "Can I use these games in my classroom?", a: "Absolutely! Many teachers use our games for math centers, transitions, early finishers, and review days. Check our Resources page for a classroom integration guide." },
   { q: "How do I report a bug or suggest a new game?", a: "Use the contact form and select 'Other' — we read every message and regularly add games based on educator feedback." },
