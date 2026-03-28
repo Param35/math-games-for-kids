@@ -228,7 +228,7 @@ export default function HomePage() {
               { icon: "🏆", title: "Gamified Progress", desc: "Stars, badges, and level-ups keep children motivated and hungry to keep learning." },
               { icon: "📱", title: "Play Anywhere", desc: "Works on tablets, phones, and desktops — no app download or account needed." },
               { icon: "🎯", title: "Curriculum Aligned", desc: "All games align with Common Core math standards for kindergarten through 6th grade." },
-              { icon: "🆓", title: "Always Free", desc: "No subscriptions, no ads targeting children, no credit card required. Period." },
+              { icon: "🆓", title: "Always Free", desc: "No subscriptions, no credit card required. Period." },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="glass-card" style={{ padding: "1.75rem" }}>
                 <div style={{ fontSize: "2rem", marginBottom: "0.75rem" }}>{icon}</div>
