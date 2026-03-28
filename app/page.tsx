@@ -101,7 +101,7 @@ export default function HomePage() {
             lineHeight: 1.7, maxWidth: 580, margin: "0 auto 2.5rem",
             fontWeight: 400
           }}>
-            24 free, interactive math games for ages 4–12. From counting to algebra foundations — play, learn, and grow.
+            24 free, interactive math games for kids, parents, and educators. From counting to algebra foundations — play, learn, and grow.
           </p>
 
           {/* CTA buttons */}
