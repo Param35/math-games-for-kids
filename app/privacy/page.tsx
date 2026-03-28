@@ -28,11 +28,11 @@ export default function PrivacyPage() {
             {[
               {
                 title: "1. Introduction",
-                content: "MathGames for Kids ('we', 'us', 'our') is committed to protecting the privacy of children and families who use our platform. This Privacy Policy explains how we collect, use, and protect information when you visit our website. We comply fully with the Children's Online Privacy Protection Act (COPPA) and the General Data Protection Regulation (GDPR).",
+                content: "MathGames for Kids ('we', 'us', 'our') is committed to protecting the privacy of children and families who use our platform. This Privacy Policy explains how we collect, use, and protect information when you visit our website. We are committed to complying with applicable privacy laws, including COPPA, and to protecting the privacy of children and families who use our platform.",
               },
               {
                 title: "2. Information We Collect",
-                content: "We do not require users to create accounts or submit personal information to play our games. We do not knowingly collect personal data from children under 13. Anonymous usage data (e.g., which pages are visited, game interactions) may be collected via privacy-preserving analytics tools solely to improve the platform.",
+                content: "We do not require users to create accounts or submit personal information to play our games. We do not require children to submit personal information to play our games, and we do not knowingly collect personal information from children under 13. Anonymous usage data (e.g., which pages are visited, game interactions) may be collected via privacy-preserving analytics tools solely to improve the platform.",
               },
               {
                 title: "3. Cookies",
