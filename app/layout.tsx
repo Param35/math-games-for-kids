@@ -58,11 +58,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7805947587874043"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
         {/* ── Google Analytics GA4 ── Replace G-XXXXXXXXXX with your real Measurement ID ── */}
         {/* Sign up free at analytics.google.com → Admin → Create Property → copy G-XXXXXXXX */}
