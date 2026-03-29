@@ -61,7 +61,7 @@ export default function RootLayout({
         {/* ── Google Analytics GA4 ── Replace G-XXXXXXXXXX with your real Measurement ID ── */}
         {/* Sign up free at analytics.google.com → Admin → Create Property → copy G-XXXXXXXX */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-J663F462XY"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -69,7 +69,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-J663F462XY');
           `}
         </Script>
       </head>
