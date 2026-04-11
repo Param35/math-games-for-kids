@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "24", label: "Free Games", icon: "🎮" },
+  { value: "34", label: "Free Games", icon: "🎮" },
   { value: "4", label: "Grade Levels", icon: "📚" },
-  { value: "8", label: "Math Skills", icon: "🧠" },
+  { value: "12", label: "Math Skills", icon: "🧠" },
   { value: "100%", label: "Free Forever", icon: "✨" },
 ];
 
@@ -101,7 +101,7 @@ export default function HomePage() {
             lineHeight: 1.7, maxWidth: 580, margin: "0 auto 2.5rem",
             fontWeight: 400
           }}>
-            24 free, interactive math games for kids, parents, and educators. From counting to algebra foundations — play, learn, and grow.
+            34 free, interactive math games for kids, parents, and educators. From counting to algebra foundations — play, learn, and grow.
           </p>
 
           {/* CTA buttons */}
@@ -150,7 +150,7 @@ export default function HomePage() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: "2rem" }}>
-            <Link href="/games" className="btn-secondary">View All 24 Games →</Link>
+            <Link href="/games" className="btn-secondary">View All 34 Games →</Link>
           </div>
         </div>
       </section>

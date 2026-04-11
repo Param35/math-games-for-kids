@@ -1,18 +1,24 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   async headers() {
     return [
       {
-        source: '/sitemap.xml',
+        source: "/sitemap.xml",
         headers: [
-          { key: 'Cache-Control', value: 'no-store, no-cache, must-revalidate, proxy-revalidate' },
-          { key: 'Pragma', value: 'no-cache' },
-          { key: 'Expires', value: '0' },
+          { key: "Content-Type", value: "application/xml; charset=utf-8" },
+          { key: "X-Robots-Tag", value: "noindex" },
+          { key: "Cache-Control", value: "public, max-age=86400, s-maxage=86400" },
         ],
       },
-    ]
+      {
+        source: "/robots.txt",
+        headers: [
+          { key: "Content-Type", value: "text/plain" },
+          { key: "Cache-Control", value: "public, max-age=86400" },
+        ],
+      },
+    ];
   },
 };
 

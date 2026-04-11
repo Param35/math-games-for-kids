@@ -7,7 +7,11 @@ export type Skill =
   | "fractions"
   | "geometry"
   | "counting"
-  | "word-problems";
+  | "word-problems"
+  | "decimals"
+  | "time"
+  | "money"
+  | "measurement";
 
 export interface Game {
   slug: string;
@@ -155,6 +159,38 @@ export const SKILLS: SkillInfo[] = [
     gradient: "from-orange-400 to-amber-500",
     icon: "📖",
   },
+  {
+    slug: "decimals",
+    name: "Decimals",
+    description: "Tenths, hundredths, and decimal operations",
+    color: "#06B6D4",
+    gradient: "from-sky-400 to-cyan-500",
+    icon: "🔟",
+  },
+  {
+    slug: "time",
+    name: "Time & Clocks",
+    description: "Reading clocks, elapsed time, and calendars",
+    color: "#A78BFA",
+    gradient: "from-violet-300 to-indigo-400",
+    icon: "🕐",
+  },
+  {
+    slug: "money",
+    name: "Money & Coins",
+    description: "Counting coins, making change, and budgeting",
+    color: "#F59E0B",
+    gradient: "from-yellow-400 to-amber-500",
+    icon: "💰",
+  },
+  {
+    slug: "measurement",
+    name: "Measurement",
+    description: "Length, weight, volume, and units",
+    color: "#34D399",
+    gradient: "from-emerald-300 to-green-500",
+    icon: "📏",
+  },
 ];
 
 export const GAMES: Game[] = [
@@ -198,6 +234,48 @@ export const GAMES: Game[] = [
     color: "#EC4899",
     icon: "🟣",
     difficulty: 1,
+    featured: false,
+  },
+  {
+    slug: "clock-reading",
+    title: "Clock Reading",
+    description: "What time does the clock show? Tell the time and win!",
+    longDescription:
+      "A friendly analog clock spins its hands and asks kids to read the time. Starting with whole hours and moving through half-hours and quarter-hours, this game builds clock-reading confidence step by step.",
+    levels: ["level-1", "level-2"],
+    skills: ["time"],
+    ageRange: "Ages 5–8",
+    color: "#A78BFA",
+    icon: "🕐",
+    difficulty: 1,
+    featured: false,
+  },
+  {
+    slug: "coin-collector",
+    title: "Coin Collector",
+    description: "Collect the right coins to make the exact amount!",
+    longDescription:
+      "Kids drag coins into a piggy bank to reach a target total. Starting with simple amounts and working up to making change, this game builds real money sense in young learners.",
+    levels: ["level-1", "level-2"],
+    skills: ["money", "counting"],
+    ageRange: "Ages 5–8",
+    color: "#F59E0B",
+    icon: "🪙",
+    difficulty: 1,
+    featured: false,
+  },
+  {
+    slug: "ruler-race",
+    title: "Ruler Race",
+    description: "Measure the objects and finish the race first!",
+    longDescription:
+      "Objects race across the screen and kids must measure them correctly using a virtual ruler. Introduces centimetres and inches in a fast-paced format that makes measurement memorable.",
+    levels: ["level-2"],
+    skills: ["measurement"],
+    ageRange: "Ages 6–8",
+    color: "#34D399",
+    icon: "📏",
+    difficulty: 2,
     featured: false,
   },
   {
@@ -253,6 +331,34 @@ export const GAMES: Game[] = [
     ageRange: "Ages 6–8",
     color: "#8B5CF6",
     icon: "🧙",
+    difficulty: 2,
+    featured: false,
+  },
+  {
+    slug: "time-traveller",
+    title: "Time Traveller",
+    description: "Travel through time by reading clocks and calendars!",
+    longDescription:
+      "Jump between different eras of history by solving time puzzles — reading clocks, calculating elapsed time, and answering calendar questions. Covers hours, minutes, days, weeks, and months.",
+    levels: ["level-2", "level-3"],
+    skills: ["time"],
+    ageRange: "Ages 7–10",
+    color: "#A78BFA",
+    icon: "⏰",
+    difficulty: 2,
+    featured: false,
+  },
+  {
+    slug: "shop-keeper",
+    title: "Shop Keeper",
+    description: "Run your own shop — count the money and give correct change!",
+    longDescription:
+      "Open your shop and serve customers! Kids add up the prices of items, take payment, and calculate the correct change to hand back. A brilliant real-world application of addition and subtraction.",
+    levels: ["level-2", "level-3"],
+    skills: ["money", "addition", "subtraction"],
+    ageRange: "Ages 7–10",
+    color: "#F59E0B",
+    icon: "🏪",
     difficulty: 2,
     featured: false,
   },
@@ -369,6 +475,20 @@ export const GAMES: Game[] = [
     featured: false,
   },
   {
+    slug: "decimal-diner",
+    title: "Decimal Diner",
+    description: "Take orders and add up decimal prices at the diner!",
+    longDescription:
+      "Work as a waiter at a busy diner, adding up meal prices shown as decimals. Teaches addition of decimals in a warm, real-world setting that kids immediately understand.",
+    levels: ["level-3", "level-4"],
+    skills: ["decimals", "addition"],
+    ageRange: "Ages 8–12",
+    color: "#06B6D4",
+    icon: "🍽️",
+    difficulty: 3,
+    featured: false,
+  },
+  {
     slug: "factor-forest",
     title: "Factor Forest",
     description: "Find all the factors hiding in the forest!",
@@ -403,7 +523,7 @@ export const GAMES: Game[] = [
     longDescription:
       "Explore a kingdom and calculate the area of each region using length × width. Progress from simple rectangles to composite shapes as you unlock new zones on the map.",
     levels: ["level-4"],
-    skills: ["geometry"],
+    skills: ["geometry", "measurement"],
     ageRange: "Ages 10–12",
     color: "#3B82F6",
     icon: "🗺️",
@@ -417,7 +537,7 @@ export const GAMES: Game[] = [
     longDescription:
       "A farmer needs fencing! Kids calculate the perimeter of various fields — rectangles, triangles, and irregular polygons — and order the right amount of fencing material.",
     levels: ["level-4"],
-    skills: ["geometry"],
+    skills: ["geometry", "measurement"],
     ageRange: "Ages 10–12",
     color: "#F97316",
     icon: "🚜",
@@ -431,7 +551,7 @@ export const GAMES: Game[] = [
     longDescription:
       "A fast-paced racing game where kids place decimal numbers (tenths and hundredths) on a number line. Develops decimal number sense and connects fractions to decimal notation.",
     levels: ["level-4"],
-    skills: ["fractions"],
+    skills: ["decimals", "fractions"],
     ageRange: "Ages 10–12",
     color: "#06B6D4",
     icon: "💨",
@@ -459,7 +579,7 @@ export const GAMES: Game[] = [
     longDescription:
       "Run your own market stall! Kids calculate totals, make change, and manage a budget. Combines multi-digit addition, subtraction, and multiplication in a real-world commerce context.",
     levels: ["level-4"],
-    skills: ["word-problems"],
+    skills: ["word-problems", "money"],
     ageRange: "Ages 10–12",
     color: "#F59E0B",
     icon: "🏪",
@@ -492,6 +612,62 @@ export const GAMES: Game[] = [
     color: "#8B5CF6",
     icon: "📏",
     difficulty: 4,
+    featured: false,
+  },
+  {
+    slug: "weight-station",
+    title: "Weight Station",
+    description: "Balance the scales and learn about weight and mass!",
+    longDescription:
+      "Objects are placed on a balance scale and kids must figure out which side is heavier, or add weights to make it balance. Introduces grams, kilograms, and comparison of mass in a visual way.",
+    levels: ["level-2", "level-3"],
+    skills: ["measurement"],
+    ageRange: "Ages 7–10",
+    color: "#34D399",
+    icon: "⚖️",
+    difficulty: 2,
+    featured: false,
+  },
+  {
+    slug: "speed-tables",
+    title: "Speed Tables",
+    description: "Race the clock answering times tables as fast as you can!",
+    longDescription:
+      "A pure speed challenge — multiplication facts appear one by one and kids type answers as quickly and accurately as possible. Tracks personal bests and celebrates new records.",
+    levels: ["level-3", "level-4"],
+    skills: ["multiplication"],
+    ageRange: "Ages 8–12",
+    color: "#8B5CF6",
+    icon: "⚡",
+    difficulty: 3,
+    featured: false,
+  },
+  {
+    slug: "fraction-number-line",
+    title: "Fraction Number Line",
+    description: "Place fractions in the right spot on the number line!",
+    longDescription:
+      "Drag fraction cards onto the correct position on a number line. Develops the crucial understanding that fractions are numbers — not just pieces of a pizza — and helps kids compare and order them accurately.",
+    levels: ["level-3", "level-4"],
+    skills: ["fractions"],
+    ageRange: "Ages 8–12",
+    color: "#10B981",
+    icon: "📍",
+    difficulty: 3,
+    featured: false,
+  },
+  {
+    slug: "volume-quest",
+    title: "Volume Quest",
+    description: "Fill containers to the right volume and win the quest!",
+    longDescription:
+      "Pour liquids into different shaped containers and read the measurement markings. Covers millilitres and litres in everyday contexts like cooking, science, and water play.",
+    levels: ["level-3", "level-4"],
+    skills: ["measurement"],
+    ageRange: "Ages 8–12",
+    color: "#34D399",
+    icon: "🧪",
+    difficulty: 3,
     featured: false,
   },
 ];
