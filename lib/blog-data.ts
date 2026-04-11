@@ -296,6 +296,103 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "Visit the supermarket scales and weigh fruit together — it makes grams and kilograms real",
     ],
   },
+  {
+    slug: "number-bonds-explained",
+    title: "Number Bonds: What They Are and Why Schools Are Obsessed With Them",
+    excerpt: "Every parent of a young child has heard the term 'number bonds' — but what actually are they, and why do teachers care so much? Here is everything you need to know, plus how to practise at home.",
+    category: "Guide",
+    readTime: "6 min read",
+    date: "October 10, 2024",
+    icon: "🔗",
+    color: "#f43f5e",
+    sections: [
+      { body: "If your child has come home from school talking about 'number bonds to 10' and you nodded along while having absolutely no idea what that meant — you are in very good company. It is one of those education terms that sounds more complicated than it is. Here is the plain English version." },
+      { heading: "What a Number Bond Actually Is", body: "A number bond is simply a pair of numbers that add together to make a bigger number. Number bonds to 10 means every pair that adds to 10: 1+9, 2+8, 3+7, 4+6, 5+5, 6+4, and so on. That is literally it. The word 'bond' is just a way of saying these numbers are connected — they belong together the way a key belongs to its lock." },
+      { heading: "Why Teachers Use Them", body: "Here is the thing that makes number bonds so useful: once a child knows that 7 and 3 make 10, they can figure out that 17 and 3 make 20, and 70 and 30 make 100. The same bond scales up. This is fundamentally different from memorising individual addition facts one by one. Number bonds give children a system, not just a list to remember." },
+      { heading: "Number Bonds to 20", body: "Once bonds to 10 are solid, the next step is bonds to 20. This is where the real power starts. A child who can immediately recall that 13+7=20 can mentally calculate 13+7+something much faster than their peers still counting on fingers. This speed and fluency is what gives children confidence in all areas of maths that follow." },
+      { heading: "Practising at Home Without It Feeling Like Work", body: "The trick is to make it physical and incidental. Deal playing cards and ask 'how many more to make ten?' Pour a quantity of beans into a bowl and slide some across — 'how many are left in the bowl?' Use two different coloured sweets laid in a line of ten. These aren't 'maths activities' to a child — they are just things you do together." },
+      { heading: "When Should My Child Know Their Number Bonds?", body: "Most schools expect children to know bonds to 10 by the end of reception year (age 5-6) and bonds to 20 by the end of Year 1 (age 6-7). If your child is behind on this, don't panic — but do prioritise it. It's the single most high-leverage thing you can work on. Almost everything else in elementary school maths builds on this foundation." },
+    ],
+    tips: [
+      "Use physical objects first — beans, counters, sweets — before any written practice",
+      "Practise bonds to 10 daily until they are completely automatic before moving on",
+      "Show how bonds to 10 scale: if 3+7=10, then 30+70=100",
+      "Play 'what's missing?' — hold up 6 fingers, ask 'how many more to make 10?'",
+    ],
+  },
+  {
+    slug: "multiplication-tricks-kids",
+    title: "Multiplication Tricks That Kids Actually Remember",
+    excerpt: "Forget rote drilling for a minute. These genuine multiplication shortcuts — the kind that stick in a child's memory for life — can cut times table learning time in half.",
+    category: "Teaching",
+    readTime: "7 min read",
+    date: "September 25, 2024",
+    icon: "✖️",
+    color: "#8b5cf6",
+    sections: [
+      { body: "There are children who seem to have their times tables down cold — effortless recall, no hesitation. In almost every case, someone showed them a shortcut or a pattern at some point, and that pattern stuck. These aren't cheats. They are genuine mathematical insights. Here are the ones that actually make a difference." },
+      { heading: "The 10 Rule: The Easiest One of All", body: "Multiplying by 10? Just put a zero on the end. 6×10=60. 14×10=140. Kids find this almost insultingly obvious once they see it — which is exactly why it works. Start here and serve up a quick win. Confidence built early is confidence that lasts." },
+      { heading: "The 5 Trick: Halve the 10", body: "If 7×10=70, then 7×5 must be half of that: 35. This works for every number. 8×5? Half of 80 is 40. 13×5? Half of 130 is 65. Once a child sees that the 5 times table is just the 10 times table cut in half, it clicks instantly and they never struggle with 5s again." },
+      { heading: "The 9 Finger Trick", body: "Hold up all 10 fingers. To multiply 9 by any number from 1 to 10, fold down the corresponding finger. For 9×4, fold down your fourth finger. Count the fingers to the left (3) and to the right (6): the answer is 36. This trick works perfectly for all of 9×1 through 9×10 and kids love doing it. The physical act of folding a finger makes the answer memorable in a way that flashcards simply don't." },
+      { heading: "Doubles and Near Doubles", body: "7×8 consistently comes up as the hardest times table fact for most children. Here's a way in: 7×8 is the same as 7×7 plus one more 7. If they know 7×7=49, then 7×8=49+7=56. This 'use a near fact' strategy works across the board and teaches real mathematical thinking rather than just memorisation." },
+      { heading: "Square Numbers Are Anchors", body: "3×3, 4×4, 5×5, 6×6, 7×7, 8×8, 9×9 — these are the square numbers. If a child learns these nine facts first (they have a visual pattern that's easier to remember), they can use them as anchors to reach all the surrounding facts. 6×7? That's 6×6 plus one more 6: 36+6=42." },
+      { heading: "The Commutative Property Halves the Work", body: "This is the single most underused shortcut in times table teaching. If you know 3×7, you automatically know 7×3. A simple demonstration — draw a 3×7 grid, then rotate it 90 degrees to show a 7×3 grid containing exactly the same number of squares — is usually enough to make this permanent. The number of unique facts to learn drops from 100 to 55." },
+    ],
+    tips: [
+      "Teach the 10s and 5s first — they are trivially easy and build instant confidence",
+      "Use the finger trick for 9s — kids love it and it never fails",
+      "Demonstrate the commutative property visually — it literally halves the workload",
+      "Learn the nine square numbers first — they anchor the entire times table grid",
+    ],
+  },
+  {
+    slug: "maths-homework-routine",
+    title: "The Maths Homework Routine That Actually Works (No Tears, No Fighting)",
+    excerpt: "The nightly homework battle is one of the most common things parents come to me about. Here is the routine that consistently makes it less painful — for children and adults.",
+    category: "Parenting",
+    readTime: "6 min read",
+    date: "September 12, 2024",
+    icon: "📅",
+    color: "#10b981",
+    sections: [
+      { body: "Most maths homework arguments start before the homework does. A child comes home tired. A parent asks if homework is done. A battle begins. What most families don't realise is that the routine surrounding homework matters more than the homework itself. Getting the conditions right changes everything." },
+      { heading: "The Timing Is Everything", body: "Children are not the same level of mentally sharp at 7pm as they are at 4pm. If maths homework consistently happens after dinner when everyone is tired and the evening is evaporating, it is going to feel harder than it is. Try shifting maths to right after school — while the brain is still in 'learning mode' and before the evening winds down. Even 20 minutes earlier can make a noticeable difference." },
+      { heading: "The Same Spot Every Day", body: "Routine reduces resistance. When a child always does their maths at the kitchen table with a snack before them, the environment itself signals 'this is homework time now.' It stops being a negotiation and becomes just what happens. The fewer decisions involved in starting, the more likely starting actually happens." },
+      { heading: "Snack First, Always", body: "Blood sugar genuinely affects concentration, particularly in younger children. A small snack before homework is not indulgence — it is logistics. A child who just ate a handful of crackers and some fruit is measurably more capable of sustained mental effort than one who hasn't." },
+      { heading: "Your Role: Human Calculator, Not Teacher", body: "When a child is stuck, the instinct is to explain. Resist it. Instead, ask questions. 'What do you think the first step might be?' 'Can you draw a picture of what's happening in this problem?' 'What do you already know?' Your job is to move them forward, not to redeliver the lesson. Children who feel taught at home often feel embarrassed or frustrated — children who feel like they figured it out themselves feel capable." },
+      { heading: "The '10 Minutes Then Stop' Rule", body: "If a child has been genuinely stuck on a single problem for ten minutes, write a note to the teacher and move on. Prolonged struggle without progress creates negative associations with maths that outlast any individual homework sheet. Teachers would far rather know where a child is stuck than have them spend an hour crying over a page." },
+    ],
+    tips: [
+      "Move homework to right after school rather than after dinner — brains are sharper",
+      "Create the exact same environment every day — same spot, same routine",
+      "Snack first — blood sugar affects concentration, especially in younger children",
+      "If stuck for 10 minutes, stop and write a note to the teacher — prolonged struggle is counterproductive",
+    ],
+  },
+  {
+    slug: "different-learners-maths",
+    title: "My Kid Learns Differently — Here's How to Find the Right Way Into Maths",
+    excerpt: "Not every child learns maths the same way. A visual learner and an auditory learner can both struggle and succeed — but for completely different reasons. Here is how to figure out which approach works for your child.",
+    category: "Parenting",
+    readTime: "7 min read",
+    date: "August 30, 2024",
+    icon: "🧩",
+    color: "#3b82f6",
+    sections: [
+      { body: "I have tutored children who could recite their times tables perfectly but fell apart the moment a fraction appeared in a diagram. I have worked with others who could look at a shape and immediately understand its properties but couldn't remember a single multiplication fact. The maths was not the problem in either case. The teaching approach was." },
+      { heading: "Visual Learners", body: "Visual learners need to see it before they can understand it. Abstract numbers on a page don't land until they are grounded in something physical or pictorial. For these children, fraction bars beat fraction rules. Number lines beat number sentences. Coloured blocks beat column arithmetic. If your child keeps asking 'but what does it look like?' — they are visual. Give them diagrams, drawings, and manipulatives before anything printed." },
+      { heading: "Kinaesthetic Learners", body: "Kinaesthetic learners — the ones who learn by doing and touching — genuinely cannot absorb maths through passive instruction. They need to handle objects, build things, and move around. This isn't a learning disability; it is just a style. Let them sort and count physical objects. Let them pace while reciting times tables. Let them draw what's happening in a word problem. The physical engagement is not a distraction — it is the mechanism." },
+      { heading: "Auditory Learners", body: "Some children lock in information through sound and rhythm. Times table songs, rhymes, and verbal repetition work much better for these children than silent reading or written practice. If your child hums while working or talks through problems out loud — encourage it. Don't tell them to be quiet; they are using their natural learning channel." },
+      { heading: "Children Who Struggle with Reading", body: "Word problems are a particular challenge for children who have reading difficulties — not because they can't do the maths, but because they can't decode the question. For these children, reading the problem aloud to them (or using text-to-speech tools) levels the playing field dramatically. The maths ability is often entirely intact; the reading barrier just hides it." },
+      { heading: "The Child Who 'Gets It' Then Forgets It", body: "This is one of the most common concerns I hear from parents: 'She understood it in the session but couldn't do it the next day.' Spaced repetition is the answer. Short, frequent revisiting of material is dramatically more effective than long, infrequent sessions. Ten minutes of review every few days beats an hour once a week, every time." },
+    ],
+    tips: [
+      "Identify your child's learning style first — visual, hands-on, or auditory — and choose tools accordingly",
+      "For visual learners: diagrams, number lines, fraction bars always before written rules",
+      "For kinaesthetic learners: physical objects, movement, drawing — never passive sitting",
+      "Use spaced repetition: 10 minutes every few days beats one long session per week",
+    ],
+  },
 ];
 
 export function getBlogArticleBySlug(slug: string): BlogArticle | undefined {
@@ -303,3 +400,4 @@ export function getBlogArticleBySlug(slug: string): BlogArticle | undefined {
 }
 
 export const ALL_BLOG_SLUGS = BLOG_ARTICLES.map((a) => a.slug);
+

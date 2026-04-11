@@ -118,7 +118,7 @@ export default function ResourcesPage() {
             {recommendedGames.map((game) => <GameCard key={game.slug} game={game} />)}
           </div>
           <div style={{ textAlign: "center", marginTop: "2rem" }}>
-            <Link href="/games" className="btn-primary">Browse All 24 Games →</Link>
+            <Link href="/games" className="btn-primary">Browse All 50 Games →</Link>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ import { DOWNLOADABLE_RESOURCES } from "@/lib/resources-data";
 
 export const metadata: Metadata = {
   title: "Sitemap | MathGames for Kids",
-  description: "Complete sitemap of MathGames for Kids — browse all 24 math games, blog articles, resources, and informational pages.",
+  description: "Complete sitemap of MathGames for Kids — browse all 50 math games, blog articles, resources, and informational pages.",
   robots: { index: true, follow: true },
 };
 
@@ -26,8 +26,8 @@ const STATIC_SECTIONS: SitemapSection[] = [
     accentColor: "#7c3aed",
     links: [
       { label: "Home", href: "/" },
-      { label: "All Games", href: "/games", badge: "24 games" },
-      { label: "Blog", href: "/blog", badge: "6 articles" },
+      { label: "All Games", href: "/games", badge: "50 games" },
+      { label: "Blog", href: "/blog", badge: "16 articles" },
       { label: "Resources", href: "/resources" },
       { label: "About Us", href: "/about" },
       { label: "Contact", href: "/contact" },
@@ -66,7 +66,7 @@ export default function SitemapPage() {
       })),
     },
     {
-      heading: "All 24 Games",
+      heading: "All 50 Games",
       icon: "🎮",
       accentColor: "#4f46e5",
       links: GAMES.map((g) => ({

@@ -914,7 +914,25 @@ const EXTRA_GAMES: Game[] = [
   },
 ];
 
-export const GAMES: Game[] = [...BASE_GAMES, ...EXTRA_GAMES];
+// Game #50 — Symmetry Studio (high search volume geometry/art crossover topic)
+const GAME_50: Game[] = [
+  {
+    slug: "symmetry-studio",
+    title: "Symmetry Studio",
+    description: "Draw the mirror image and complete the symmetrical design!",
+    longDescription:
+      "Kids are given half a shape, pattern, or picture and must draw the mirror image to complete it. Covers lines of symmetry, rotational symmetry, and reflective symmetry across all four quadrants. One of the most consistently searched geometry topics in primary school — and very few engaging free games exist for it.",
+    levels: ["level-2", "level-3"],
+    skills: ["geometry", "number-sense"],
+    ageRange: "Ages 6–10",
+    color: "#EC4899",
+    icon: "🪞",
+    difficulty: 2,
+    featured: false,
+  },
+];
+
+export const GAMES: Game[] = [...BASE_GAMES, ...EXTRA_GAMES, ...GAME_50];
 
 export function getGameBySlug(slug: string): Game | undefined {
   return GAMES.find((g) => g.slug === slug);

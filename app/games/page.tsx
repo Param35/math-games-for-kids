@@ -5,9 +5,9 @@ import { GAMES, LEVELS, SKILLS } from "@/lib/games-data";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "All Free Math Games for Kids | Browse 24 Games",
+  title: "All Free Math Games for Kids | Browse 50 Online Math Games",
   description:
-    "Browse all 24 free online math games for kids! Filter by grade level (K-6) or math skill. Addition, subtraction, multiplication, fractions, geometry and more.",
+    "Browse all 50 free online math games for kids! Filter by grade level (Kindergarten to Grade 6) or math skill. Number bonds, addition, subtraction, multiplication, division, fractions, geometry, algebra and more.",
 };
 
 export default function GamesPage() {
@@ -21,7 +21,7 @@ export default function GamesPage() {
           </h1>
           <div className="divider" />
           <p style={{ color: "var(--text-secondary)", maxWidth: 500, margin: "1.25rem auto 0", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            24 free online math games for kids — from kindergarten counting to upper-elementary word problems.
+            50 free online math games for kids — from kindergarten number bonds to upper-elementary algebra and percentages.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function GamesPage() {
       <section style={{ padding: "0 1.5rem 6rem" }} aria-labelledby="all-games-heading">
         <div className="section-container">
           <h2 id="all-games-heading" style={{ fontFamily: "Outfit, sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2rem)", marginBottom: "1.5rem" }}>
-            All 24 Games
+            All 50 Games
           </h2>
           <div className="games-grid">
             {GAMES.map((game) => (
