@@ -11,7 +11,10 @@ export type Skill =
   | "decimals"
   | "time"
   | "money"
-  | "measurement";
+  | "measurement"
+  | "number-sense"
+  | "algebra"
+  | "mixed-operations";
 
 export interface Game {
   slug: string;
@@ -191,9 +194,33 @@ export const SKILLS: SkillInfo[] = [
     gradient: "from-emerald-300 to-green-500",
     icon: "📏",
   },
+  {
+    slug: "number-sense",
+    name: "Number Sense",
+    description: "Number bonds, odd/even, rounding, comparing numbers",
+    color: "#F43F5E",
+    gradient: "from-rose-400 to-pink-600",
+    icon: "🔢",
+  },
+  {
+    slug: "algebra",
+    name: "Algebra & Logic",
+    description: "Basic algebra, patterns, order of operations",
+    color: "#6366F1",
+    gradient: "from-indigo-400 to-violet-600",
+    icon: "🔡",
+  },
+  {
+    slug: "mixed-operations",
+    name: "Mixed Operations",
+    description: "Combining addition, subtraction, multiplication, division",
+    color: "#14B8A6",
+    gradient: "from-teal-400 to-cyan-600",
+    icon: "🧮",
+  },
 ];
 
-export const GAMES: Game[] = [
+const BASE_GAMES: Game[] = [
   {
     slug: "number-pop",
     title: "Number Pop",
@@ -671,6 +698,223 @@ export const GAMES: Game[] = [
     featured: false,
   },
 ];
+
+// ── 15 High-Search-Volume Games (Number Sense, Algebra, Mixed Ops) ──────────
+
+const EXTRA_GAMES: Game[] = [
+  {
+    slug: "number-bonds",
+    title: "Number Bonds Blast",
+    description: "Shoot the number that completes the bond to 10 or 20!",
+    longDescription:
+      "A space shooter where kids blast the correct number to complete each number bond. Bonds to 10 first, then 20. Number bonds are the single most searched kindergarten maths topic online — they are the foundation of all mental addition.",
+    levels: ["level-1", "level-2"],
+    skills: ["number-sense", "addition"],
+    ageRange: "Ages 4–8",
+    color: "#F43F5E",
+    icon: "💥",
+    difficulty: 1,
+    featured: true,
+  },
+  {
+    slug: "odd-even-sorter",
+    title: "Odd & Even Sorter",
+    description: "Sort the numbers into the odd and even bins — fast!",
+    longDescription:
+      "Fruit and vegetables tumble down a conveyor belt. Kids must sort them into odd and even baskets before they fall off the edge. Builds instant recognition of odd and even numbers from 1 to 100.",
+    levels: ["level-1", "level-2"],
+    skills: ["number-sense", "counting"],
+    ageRange: "Ages 5–8",
+    color: "#8B5CF6",
+    icon: "🔁",
+    difficulty: 1,
+    featured: false,
+  },
+  {
+    slug: "greater-or-less",
+    title: "Greater or Less?",
+    description: "Choose the correct sign — greater than, less than, or equal!",
+    longDescription:
+      "Two numbers appear on a balance scale. Kids drag the correct alligator mouth (>, <, =) between them. Covers single digits, double digits, three-digit numbers, decimals, and fractions as difficulty increases.",
+    levels: ["level-1", "level-2", "level-3"],
+    skills: ["number-sense", "counting"],
+    ageRange: "Ages 5–10",
+    color: "#06B6D4",
+    icon: "⚖️",
+    difficulty: 1,
+    featured: false,
+  },
+  {
+    slug: "rounding-roundup",
+    title: "Rounding Roundup",
+    description: "Round up the numbers and herd them to the right pen!",
+    longDescription:
+      "Numbers are cattle and kids are the ranch hand! Round numbers to the nearest 10, 100, or 1000 and herd them into the correct pen. One of the most consistently searched elementary maths topics — this game makes the rounding rule finally click.",
+    levels: ["level-2", "level-3"],
+    skills: ["number-sense"],
+    ageRange: "Ages 7–10",
+    color: "#F59E0B",
+    icon: "🤠",
+    difficulty: 2,
+    featured: false,
+  },
+  {
+    slug: "roman-numerals",
+    title: "Roman Numeral Ruins",
+    description: "Decode the Roman numerals carved into the ancient ruins!",
+    longDescription:
+      "An archaeology adventure! Kids explore ancient ruins and decode Roman numerals engraved on stones and columns. Covers I, V, X, L, C and their combinations. One of the most searched upper-elementary topics with very few good free games online.",
+    levels: ["level-3", "level-4"],
+    skills: ["number-sense", "counting"],
+    ageRange: "Ages 8–12",
+    color: "#A16207",
+    icon: "🏛️",
+    difficulty: 3,
+    featured: false,
+  },
+  {
+    slug: "order-of-operations",
+    title: "Operation Order",
+    description: "Solve equations in the right order — BODMAS rules the game!",
+    longDescription:
+      "A robot needs instructions in the right order to function. Solve multi-step equations using the correct order of operations (BODMAS/PEMDAS). Covers brackets, multiplication, division, addition, and subtraction. A highly searched upper-elementary topic.",
+    levels: ["level-4"],
+    skills: ["algebra", "mixed-operations"],
+    ageRange: "Ages 10–12",
+    color: "#6366F1",
+    icon: "🤖",
+    difficulty: 4,
+    featured: false,
+  },
+  {
+    slug: "negative-numbers",
+    title: "Below Zero",
+    description: "Dive below zero and explore negative numbers!",
+    longDescription:
+      "A deep-sea diving game where the ocean floor is below zero. Kids place negative numbers on a number line, compare negative and positive values, and solve simple addition and subtraction involving negatives. Temperature and banking contexts used throughout.",
+    levels: ["level-4"],
+    skills: ["number-sense", "counting"],
+    ageRange: "Ages 10–12",
+    color: "#0EA5E9",
+    icon: "🌊",
+    difficulty: 4,
+    featured: false,
+  },
+  {
+    slug: "percentage-planet",
+    title: "Percentage Planet",
+    description: "Find the percentage to power the rocket and escape the planet!",
+    longDescription:
+      "To fuel the rocket and escape Percentage Planet, kids must calculate percentages of amounts, convert between fractions, decimals, and percentages, and find percentage increases and decreases. One of the most searched upper-elementary and middle school maths topics.",
+    levels: ["level-4"],
+    skills: ["fractions", "decimals"],
+    ageRange: "Ages 10–12",
+    color: "#7C3AED",
+    icon: "🪐",
+    difficulty: 4,
+    featured: false,
+  },
+  {
+    slug: "3d-shape-explorer",
+    title: "3D Shape Explorer",
+    description: "Identify 3D shapes and count their faces, edges, and vertices!",
+    longDescription:
+      "Rotate and explore 3D shapes in an interactive model viewer. Identify cubes, spheres, cylinders, cones, pyramids, and prisms. Count faces, edges, and vertices. Connects 2D shape knowledge to three-dimensional geometry — a commonly searched curriculum topic.",
+    levels: ["level-2", "level-3"],
+    skills: ["geometry"],
+    ageRange: "Ages 6–10",
+    color: "#3B82F6",
+    icon: "🎲",
+    difficulty: 2,
+    featured: false,
+  },
+  {
+    slug: "prime-time",
+    title: "Prime Time",
+    description: "Sort the prime numbers from the composites before time runs out!",
+    longDescription:
+      "Numbers appear on screen at increasing speed. Kids must quickly sort them into prime or composite groups. Then, a factor tree mode lets them find prime factors step by step. Covers primes up to 100 and prime factorization.",
+    levels: ["level-4"],
+    skills: ["number-sense", "multiplication"],
+    ageRange: "Ages 10–12",
+    color: "#10B981",
+    icon: "🔑",
+    difficulty: 4,
+    featured: false,
+  },
+  {
+    slug: "algebra-island",
+    title: "Algebra Island",
+    description: "Solve for the missing letter and unlock the treasure chest!",
+    longDescription:
+      "On a tropical island, treasure chests are locked with algebra puzzles. Solve simple one-step equations (e.g. x + 4 = 9) and one-variable expressions. Introduces pre-algebra concepts in a story-driven format. One of the most searched middle school entry-level topics.",
+    levels: ["level-4"],
+    skills: ["algebra"],
+    ageRange: "Ages 10–12",
+    color: "#6366F1",
+    icon: "🏝️",
+    difficulty: 4,
+    featured: false,
+  },
+  {
+    slug: "mixed-maths-challenge",
+    title: "Mixed Maths Challenge",
+    description: "Spin the wheel — any operation could come up! Ready for anything?",
+    longDescription:
+      "A game show where the wheel spins to a random operation — addition, subtraction, multiplication, or division. Kids solve whatever comes up in a time-limited challenge. Builds the mental flexibility that standardised tests and real-world maths actually require.",
+    levels: ["level-3", "level-4"],
+    skills: ["mixed-operations"],
+    ageRange: "Ages 8–12",
+    color: "#14B8A6",
+    icon: "🎡",
+    difficulty: 3,
+    featured: false,
+  },
+  {
+    slug: "sequence-detective",
+    title: "Sequence Detective",
+    description: "Crack the code by completing the number sequence!",
+    longDescription:
+      "A detective agency with a twist — every case is solved by completing a tricky number sequence. Arithmetic sequences (add or subtract a fixed amount), geometric sequences (multiply), and Fibonacci-style patterns all appear. Builds algebraic thinking in a puzzle format.",
+    levels: ["level-2", "level-3", "level-4"],
+    skills: ["algebra", "counting"],
+    ageRange: "Ages 6–12",
+    color: "#F97316",
+    icon: "🔍",
+    difficulty: 2,
+    featured: false,
+  },
+  {
+    slug: "lightning-maths",
+    title: "Lightning Maths",
+    description: "Answer as fast as you can — race the lightning bolt!",
+    longDescription:
+      "A pure, adrenaline-driven mental maths speed game. Choose your level and operation, then solve as many problems as possible before the timer runs out. Beat your personal record each session. Proven to build maths fluency faster than any other format — and one of the most searched game types online.",
+    levels: ["level-2", "level-3", "level-4"],
+    skills: ["mixed-operations"],
+    ageRange: "Ages 6–12",
+    color: "#FBBF24",
+    icon: "⚡",
+    difficulty: 2,
+    featured: true,
+  },
+  {
+    slug: "compare-numbers",
+    title: "Number Comparison Tower",
+    description: "Stack numbers from smallest to largest — build the tallest tower!",
+    longDescription:
+      "Build a tower by stacking number blocks from smallest to largest. Covers whole numbers, decimals, fractions, and negative numbers at different difficulty settings. Develops number ordering fluency which underpins all four operations and is a constant source of parent and teacher searches.",
+    levels: ["level-1", "level-2", "level-3"],
+    skills: ["number-sense", "counting"],
+    ageRange: "Ages 4–10",
+    color: "#EC4899",
+    icon: "🏗️",
+    difficulty: 1,
+    featured: false,
+  },
+];
+
+export const GAMES: Game[] = [...BASE_GAMES, ...EXTRA_GAMES];
 
 export function getGameBySlug(slug: string): Game | undefined {
   return GAMES.find((g) => g.slug === slug);
