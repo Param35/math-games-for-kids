@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import StarsBg from "@/components/StarsBg";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mathgamesforkids.xyz"),
   title: {
     default: "Free Math Games for Kids | 50 Fun Online Math Games",
     template: "%s | MathGames for Kids",
@@ -83,8 +84,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <script
-          async
+        <Script
+          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7805947587874043"
           crossOrigin="anonymous"
         />
