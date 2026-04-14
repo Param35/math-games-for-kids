@@ -102,6 +102,35 @@ export default function RootLayout({
             gtag('config', 'G-J663F462XY');
           `}
         </Script>
+        {/* Global SEO Schemas */}
+        <Script id="schema-website" type="application/ld+json" strategy="afterInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "MathGames for Kids",
+              "url": "https://www.mathgamesforkids.xyz",
+              "description": "50 free online math games for kids aged 4–12!",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.mathgamesforkids.xyz/games?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }
+          `}
+        </Script>
+        <Script id="schema-org" type="application/ld+json" strategy="afterInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "MathGames for Kids",
+              "url": "https://www.mathgamesforkids.xyz",
+              "logo": "https://www.mathgamesforkids.xyz/icon.png",
+              "sameAs": []
+            }
+          `}
+        </Script>
       </head>
       <body style={{ display: "flex", flexDirection: "column", minHeight: "100vh", position: "relative" }}>
         <StarsBg />

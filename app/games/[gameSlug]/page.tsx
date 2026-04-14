@@ -39,8 +39,29 @@ export default async function GamePage({ params }: Props) {
     (g) => g.slug !== game.slug && g.skills.some((s) => game.skills.includes(s))
   ).slice(0, 3);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": ["EducationalApplication", "VideoGame"],
+    "name": game.title,
+    "description": game.longDescription,
+    "applicationCategory": "EducationalGame",
+    "operatingSystem": "WebBrowser",
+    "genre": "Educational",
+    "educationalUse": "Math Practice",
+    "educationalRole": "student",
+    "learningResourceType": "Educational game",
+    "url": `https://www.mathgamesforkids.xyz/games/${game.slug}`,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" style={{ padding: "1.5rem 1.5rem 0" }}>
         <div className="section-container">

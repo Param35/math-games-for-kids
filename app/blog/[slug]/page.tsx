@@ -28,8 +28,36 @@ export default async function BlogPostPage({ params }: Props) {
 
   const related = BLOG_ARTICLES.filter((a) => a.slug !== slug).slice(0, 3);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.mathgamesforkids.xyz/blog/${article.slug}`
+    },
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": "https://www.mathgamesforkids.xyz/og-image.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Whitfield Glenn Raymond",
+      "url": "https://www.mathgamesforkids.xyz/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MathGames for Kids",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.mathgamesforkids.xyz/icon.png"
+      }
+    },
+    "datePublished": "2025-04-01T08:00:00+00:00",
+    "dateModified": "2025-04-01T08:00:00+00:00"
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" style={{ padding: "1.5rem 1.5rem 0" }}>
         <div className="section-container">
