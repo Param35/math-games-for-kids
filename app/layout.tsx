@@ -84,11 +84,21 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <Script
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7805947587874043"
-          crossOrigin="anonymous"
-        />
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23210846542/A10', [[300, 250], 'fluid'], 'div-gpt-ad-1794541295381-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+        <!-- /23210846542/A10 -->
+<div id='div-gpt-ad-1794541295381-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1794541295381-0'); });
+  </script>
+</div>
         {/* ── Google Analytics GA4 ── Replace G-XXXXXXXXXX with your real Measurement ID ── */}
         {/* Sign up free at analytics.google.com → Admin → Create Property → copy G-XXXXXXXX */}
         <Script
