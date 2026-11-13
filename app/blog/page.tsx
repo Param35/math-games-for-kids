@@ -13,7 +13,8 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+      <section className="page-hero" aria-labelledby="blog-heading">
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
@@ -28,7 +29,6 @@ export default function BlogPage() {
     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1794541295381-0'); });
   </script>
 </div>
-      <section className="page-hero" aria-labelledby="blog-heading">
         <div className="section-container">
           <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(124,58,237,0.15)", border: "1px solid rgba(124,58,237,0.4)", padding: "5px 18px", borderRadius: "9999px", marginBottom: "1.25rem" }}>
             <span style={{ fontFamily: "Outfit, sans-serif", fontWeight: 700, fontSize: "0.75rem", color: "#a78bfa", textTransform: "uppercase", letterSpacing: "0.08em" }}>
