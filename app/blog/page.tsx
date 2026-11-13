@@ -13,6 +13,21 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
+      <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23210846542/A10', [[300, 250], 'fluid'], 'div-gpt-ad-1794541295381-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+        <!-- /23210846542/A10 -->
+<div id='div-gpt-ad-1794541295381-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1794541295381-0'); });
+  </script>
+</div>
       <section className="page-hero" aria-labelledby="blog-heading">
         <div className="section-container">
           <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(124,58,237,0.15)", border: "1px solid rgba(124,58,237,0.4)", padding: "5px 18px", borderRadius: "9999px", marginBottom: "1.25rem" }}>
